@@ -6,15 +6,15 @@ import java.util.Optional;
 
 public interface CustoRepository extends JpaRepository<Custo, Long>{
     Optional<Custo> findByImposto(String imposto);
-    Optional<Custo> findBySenha(String Senha);
-    Optional<Custo> findBySenha(String Senha);
-    Optional<Custo> findBySenha(String Senha);
-    Optional<Custo> findBySenha(String Senha);
+    Optional<Custo> findByCustoVariavel(String custoVariavel);
+    Optional<Custo> findByCustoFixo(String custoFixo);
+    Optional<Custo> findByMargemLucro(String margemLucro);
+    Optional<Custo> findByDataProcessamento(String dataProcessamento);
 
     boolean existsByImposto(String imposto);
-    boolean existsBySenha(String Senha);
-    boolean existsBySenha(String Senha);
-    boolean existsBySenha(String Senha);
-    boolean existsBySenha(String Senha);
+    boolean existsByCustoVariavel(String custoVariavel);
+    boolean existsByCustoFixo(String custoFixo);
+    boolean existsByMargemLucro(String margemLucro);
+    boolean existsByDataProcessamento(String dataProcessamento);
 
 }

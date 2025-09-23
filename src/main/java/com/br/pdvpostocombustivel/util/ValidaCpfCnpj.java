@@ -1,4 +1,4 @@
 package com.br.pdvpostocombustivel.util;
 //validante de CPF em boolean
-public class ValidaCpf {
+public class ValidaCpfCnpj {
 }
