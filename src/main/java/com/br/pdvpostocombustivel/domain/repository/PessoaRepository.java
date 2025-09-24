@@ -8,12 +8,12 @@ import java.time.LocalDate;
 import java.util.Optional;
 
 public interface PessoaRepository extends JpaRepository<Pessoa, Long>{
-   Optional<Pessoa> findByNome(String nome);
+   Optional<Pessoa> findByNomeCompleto(String nomeCompleto);
    Optional<Pessoa> findByCpfCnpj(String cpfCnpj);
     Optional<Pessoa> findByNumeroCtps(Long numeroCtps);
     Optional<Pessoa> findByDataNascimento(LocalDate dataNascimento);
     Optional<Pessoa> findByTipoPessoa(TipoPessoa tipoPessoa);
-    boolean existsByNome(String nome);
+    boolean existsByNomeCompleto(String nomeCompleto);
     boolean existsByCpfCnpj (String cpfCnpj);
     boolean existsByNumeroCtps (Long numeroCtps);
     boolean existsByDataNascimento(LocalDate dataNascimento);
