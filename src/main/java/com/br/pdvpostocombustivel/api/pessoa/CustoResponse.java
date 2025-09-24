@@ -1,4 +1,4 @@
-package com.br.pdvpostocombustivel.api.dto;
+package com.br.pdvpostocombustivel.api.pessoa.dto;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
