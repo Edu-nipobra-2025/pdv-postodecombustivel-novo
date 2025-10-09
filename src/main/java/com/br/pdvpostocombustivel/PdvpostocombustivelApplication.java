@@ -1,30 +1,29 @@
 package com.br.pdvpostocombustivel;
 
+import com.br.pdvpostocombustivel.enums.TipoPessoa;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.br.pdvpostocombustivel.domain.entity.Pessoa;
 
+import java.time.LocalDate;
+
 @SpringBootApplication
 public class PdvpostocombustivelApplication {
 
-    public static void main(String[] args) {
-        //SpringApplication.run(PdvpostocombustivelApplication.class, args);
-        Pessoa pessoa1 = new Pessoa();
-        pessoa1.setNomeCompleto("Vasap");
-        pessoa1.setCpfCnpj("06271056000167");
-        pessoa1.setNumeroCtps(123456789L);
+public static void main(String[] args) {
+  //SpringApplication.run(PdvpostocombustivelApplication.class, args);
+ Pessoa pessoa1 = new Pessoa
+("Vasap","06271056000167",
+  123456789L, LocalDate.of(1985, 7, 22), TipoPessoa.FISICA);
 
+Pessoa pessoa2 = new Pessoa
+("Vasap","06271056000167",
+123456789L, LocalDate.of(1985, 7, 22), TipoPessoa.FISICA);
 
-        Pessoa pessoa2 = new Pessoa();
-        pessoa2.setNomeCompleto("Vasap");
-        pessoa2.setCpfCnpj("06271056000167");
-        pessoa2.setNumeroCtps(123456789L);
+Pessoa pessoa3 = new Pessoa
+("jasap","06271056000167",
+123456789L, LocalDate.of(1985, 7, 22), TipoPessoa.FISICA);
 
-
-        Pessoa pessoa3 = new Pessoa();
-        pessoa3.setNomeCompleto("Vasap");
-        pessoa3.setCpfCnpj("06271056000167");
-        pessoa3.setNumeroCtps(123456789L);
 
         System.out.println("Nome Completo " + pessoa1.getNomeCompleto());
         System.out.println("CPF/CNPJ " + pessoa1.getCpfCnpj());

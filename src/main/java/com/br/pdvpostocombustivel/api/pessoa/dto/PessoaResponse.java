@@ -1,16 +1,11 @@
-package com.br.pdvpostocombustivel.api.pessoa;
-
-import com.br.pdvpostocombustivel.enums.TipoPessoa;
-import org.springframework.format.annotation.DateTimeFormat;
+package com.br.pdvpostocombustivel.api.pessoa.dto;
 
 import java.time.LocalDate;
 
+// Para resposta
 public record PessoaResponse(
         String nomeCompleto,
         String cpfCnpj,
         Long numeroCtps,
-        @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-        LocalDate dataNascimento,
-        TipoPessoa tipoPessoa
-) {
-}
+        LocalDate dataNascimento
+){}

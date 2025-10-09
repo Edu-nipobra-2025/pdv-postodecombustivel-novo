@@ -1,8 +1,11 @@
 package com.br.pdvpostocombustivel.api.pessoa;
 
 
+import com.br.pdvpostocombustivel.api.pessoa.dto.PessoaRequest;
+import com.br.pdvpostocombustivel.api.pessoa.dto.PessoaResponse;
 import com.br.pdvpostocombustivel.domain.entity.Pessoa;
 import com.br.pdvpostocombustivel.domain.repository.PessoaRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Service;
@@ -116,8 +119,7 @@ public class PessoaService {
                 p.getNomeCompleto(),
                 p.getCpfCnpj(),
                 p.getNumeroCtps(),
-                p.getDataNascimento(),
-                p.getTipoPessoa()
+                p.getDataNascimento()
         );
     }
 }

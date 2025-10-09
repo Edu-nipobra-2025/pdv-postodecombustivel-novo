@@ -1,4 +1,4 @@
-package enums;
+package com.br.pdvpostocombustivel.enums;
 
 public enum TipoProduto {
 }

@@ -1,4 +1,4 @@
-package com.br.pdvpostocombustivel.api.pessoa;
+package com.br.pdvpostocombustivel.api.pessoa.dto;
 
 public record ProdutoResponse (
         String nome,
