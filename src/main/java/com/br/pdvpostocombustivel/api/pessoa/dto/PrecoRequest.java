@@ -1,4 +1,4 @@
-package com.br.pdvpostocombustivel.api.pessoa;
+package com.br.pdvpostocombustivel.api.pessoa.dto;
 import java.math.BigDecimal;
 import javax.xml.crypto.Data;
 public record PrecoRequest (

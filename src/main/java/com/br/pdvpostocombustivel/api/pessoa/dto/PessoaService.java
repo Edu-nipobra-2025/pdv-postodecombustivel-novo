@@ -1,4 +1,4 @@
-package com.br.pdvpostocombustivel.api.pessoa;
+package com.br.pdvpostocombustivel.api.pessoa.dto;
 
 
 import com.br.pdvpostocombustivel.domain.entity.Pessoa;
