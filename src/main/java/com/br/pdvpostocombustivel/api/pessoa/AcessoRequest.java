@@ -1,4 +1,4 @@
-package com.br.pdvpostocombustivel.api.pessoa.dto;
+package com.br.pdvpostocombustivel.api.pessoa;
 
 public record AcessoRequest(
         String  usuario,
